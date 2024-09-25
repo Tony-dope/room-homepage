@@ -1,0 +1,96 @@
+button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+}
+  
+button:hover {
+    color: gray;
+}
+
+p{
+    color: rgb(212, 196, 165);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    margin-top: 35px;
+    
+}
+
+.numbertext a{
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: small;
+    font-weight: 500;
+    color: aliceblue;
+    cursor:pointer;
+}
+
+
+.numbertext .icon {
+    display: none;
+}
+
+.bor i{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .numbertext a:not(:first-child) {display: none;}
+    .numbertext a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 400px) {
+    .numbertext.responsive {position: relative;}
+    .numbertext.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .numbertext.responsive a {
+      float: none;
+      display: inline-flex;
+      text-align: left;
+    }
+    h1{
+        text-align: center;
+    }
+  }
+
+
+
+@media screen and (max-width: 400px) {
+    .numbertext a{
+        color: blue;
+    }
+
+}
+  
